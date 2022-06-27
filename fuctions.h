@@ -11,8 +11,6 @@ using namespace std;
 
 user downloaded ("Name", "Surname", "Account", 0, "Card_Number", "Pesel", "Id_number");
 user added ("Name", "Surname", "Account", 0, "Card_Number", "Pesel", "Id_number");
-user * start_two = nullptr; 
-user * start = nullptr; 
 
 void find_user(string id_number)
 {
@@ -147,6 +145,8 @@ void deposit(int Amount)
 
 void save()
 {
+  user * start_two = nullptr; 
+  user * start = nullptr; 
     //Czytanie z pliku users
     ifstream from("uers.txt");
     if(!from)
@@ -413,9 +413,10 @@ void save()
           killer = find;
           find = find->next;
           delete killer;
-       }       
+       }     
       }
-         
+       added.set_id_number("Id_Number");
+       added.set_name("Name");
     }
 }
 #endif

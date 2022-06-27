@@ -74,11 +74,11 @@ bool check_pass(string login, string pass, string type)
       }
     
   }
-    
+    return 0; 
 }
 int main()
 {
-    int wybor; 
+    int wybor;  
     while (true)
     {
       cout<<endl;
@@ -92,12 +92,12 @@ int main()
         case 1:
         {
             string login;
-            string haslo; 
+            string haslo;
+            char c = ' '; 
             cout<<endl;
             cout<<"=== WORKER LOGIN ==="<<endl;
             cout<<"Login: ";
             cin>>login;
-            char c; 
             cout<<"PASSWORD: ";
             while(c!=13)
             {

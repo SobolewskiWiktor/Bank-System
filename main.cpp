@@ -166,6 +166,7 @@ int main()
                 cout << "Name: ";
                 cin >> Name;
                 downloaded.set_name(Name);
+                save();
                 break;
               }
               case 2:
@@ -174,6 +175,7 @@ int main()
                 cout << "Surname: ";
                 cin >> temp;
                 downloaded.set_surname(temp);
+                save();
                 break;
               }
               case 3:
@@ -182,6 +184,7 @@ int main()
                 cout << "Id number: ";
                 cin >> temp;
                 downloaded.set_id_number(temp);
+                save();
                 break;
               }
               case 4:
@@ -190,6 +193,7 @@ int main()
                 cout << "PESEL: ";
                 cin >> temp;
                 downloaded.set_pesel(temp);
+                save();
                 break;
               }
               case 5:
@@ -198,6 +202,7 @@ int main()
                 cout << "Card number: ";
                 cin >> temp;
                 downloaded.set_card_number(temp);
+                save();
                 break;
               }
               case 6:
@@ -206,6 +211,7 @@ int main()
                 cout << "Accout number: ";
                 cin >> temp;
                 downloaded.set_account(temp);
+                save();
                 break;
               }
               }

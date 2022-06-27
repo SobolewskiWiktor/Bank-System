@@ -283,7 +283,7 @@ int main()
       string haslo;
       char c = ' ';
       cout << endl;
-      cout << "=== WORKER LOGIN ===" << endl;
+      cout << "=== USER LOGIN ===" << endl;
       cout << "Login: ";
       cin >> login;
       cout << "PASSWORD: ";

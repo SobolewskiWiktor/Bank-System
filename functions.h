@@ -77,7 +77,6 @@ void find_user(string id_number)
            }
         }
         Money = stoi(temp);
-        cout<<"[info] - get: "<<id_number <<" in base: "<<Id_number<<endl;
         if(Id_number == id_number)
         {
             cout<<"[test] - finded"<<endl;
@@ -207,10 +206,8 @@ void save()
            Card_Number = Card_Number + line[i]; 
            }
         }
-        cout<<"[TEST] - OBLICZAM Z PLIKU USERS.txt temp: "<<temp<<endl;
         Money = stoi(temp);
         //sprawdzenie ich z klasa downloaded
-        cout<<"[TEST] - Sprawdzam z downloaded "<<endl;
         if(Money != downloaded.get_money() && downloaded.get_money() != 0 && Id_number == downloaded.get_id_number())
         {
             cout<<"[TEST] - zmieniam dane na te z downloaded "<<endl;
@@ -354,7 +351,6 @@ void save()
            Card_Number = Card_Number + line_two[i]; 
            }
         }
-        cout<<"[TEST] - OBLICZAM Z PLIKU TEMP.txt tmp: "<<temp<<endl;
         Money = stoi(temp);
         //tworzenie listy laczonej z temp.txt
         user * adder_two = new user( Name,  Surname,  Account,  Money,  Card_Number,  Pesel,  Id_number);

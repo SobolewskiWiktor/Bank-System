@@ -7,7 +7,6 @@
 #include "functions.h"
 #include "classes.h"
 
-//testowt update
 using namespace std;
 
 bool check_pass(string login, string pass, string type)
